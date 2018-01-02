@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="index">
+
+<!-- popup window -->
+<div id="overlay">
+    <div class="popup">
+        <div class="registration-block">
+            <p class="registration-title">Есть аккаунт? <a href="">Войти</a></p>
+            <div class="registration-steps">
+                <p>Регистрация</p>
+                <div class="registration-methods">
+                    <input type="button" value="По телефону">
+                    <input type="button" value="По эл.почте">
+                    <input type="button" value="Через соц.сети">
+                </div>
+            </div>
+            <div class="choose-social-networks">
+                <p>Выберете социальную сеть</p>
+
+                <div><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <input type="button" value="Войти через Facebook">
+                </div>
+                <div><i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                    <input type="button" value="Войти через Google Plus">
+                </div>
+                <p>Мы никогда ничего не опубликуем<br>
+                    в Вашем аккаунте без Вашего разрешения.</p>
+            </div>
+        </div>
+        <button class="close" title="Закрыть" id="close"></button>
+    </div>
+</div>
+<!-- / popup window -->
+<header>
+    <div class="top-container">
+        <div class="site-logo">
+            <span class="logo-first-part">lo<span class="logo-second-part">go</span></span>
+        </div>
+        <!--mobile menu hide on desktop-->
+        <nav class="mob-menu">
+            <div id="navMenu" class="sidenav">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fa fa-angle-left"></i></a>
+                <aside class="mobile-main-sidebar">
+                    <h3><span>Меню</span></h3>
+                    <ul>
+                        <li class="block-mob-content-menu">
+                            <a href="#" class="group-list-mobile">Магазин скидок</a>
+                        </li>
+                        <li class="block-mob-content-menu">
+                            <a class="group-list-mobile">Партнерам</a>
+                        </li>
+                        <li class="block-mob-content-menu">
+                            <a href="#" class="group-list-mobile">Днепр</a>
+                            <ul>
+                                <li><a href="">Днепр</a></li>
+                                <li><a href="">Киев</a></li>
+                                <li><a href="">Запорожье</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <span class="mobile-menu-btn" onclick="openNav()">&#9776;</span>
+        </nav><!-- /mobile menu hide on desktop-->
+
+        <!--desktop menu hide on mobile-->
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="#">Магазин скидок</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li class="dropdown-menu">
+                    <a href="#">Днепр</a>
+                    <!-- dropdowm list -->
+                    <ul class="submenu">
+                        <li><a href="#">Днепр</a></li>
+                        <li><a href="#">Киев</a></li>
+                        <li><a href="#">Запорожье</a></li>
+                    </ul><!-- /dropdowm list -->
+                </li>
+                <li class="user-name"><a href="#">Привет <span>Андрей</span></a>
+                </li>
+                <li class="calendar-date">
+                    <img src="image/rounded-rectangle-688.png" alt="">
+                    <span>4</span><span>Фрипея</span>
+                </li>
+            </ul>
+        </nav><!--desktop menu hide on mobile-->
+    </div>
+</header>
+<!-- top container -->
+<section class="top-wrapper">
+    <div class="type-number-container">
+        <div class="title-number-container">
+            <p>Введите номер телефона</p>
+        </div>
+        <p>Пополняйте выгодно прямо сейчас</p>
+        <form class="number-field">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <input class="btn-field" type="tel" name="phone_number" placeholder="+38 ( _ _ _ ) _ _ _-_ _-_ _ ">
+            <input class="btn" type="submit" value="Пополнить">
+        </form>
+        <div class="video-field">
+            <p><i class="fa fa-play-circle" aria-hidden="true"></i>Как работает сервис</p>
+        </div>
+    </div>
+    <!-- container for the block with services -->
+    <div class="service-block">
+<!--block replenish mobile-->
+        <div class="service-small-block">
+            <div class="title-small-block">
+                <img class="layer-1" src="image/icons/ellipse-2.png" alt="ellipse">
+                <img class="layer-2" src="image/icons/shape-532.png" alt="shape">
+                <p>Пополнить мобильный</p>
+            </div>
+            <div class="container-block-service">
+                <div class="companies-logo ">
+                    <div><img src="image/company-logo/layer-1.png" alt=""></div>
+                    <div><img src="image/company-logo/lifecell.png" alt=""></div>
+                    <div><img src="image/company-logo/vodafone.png" alt=""></div>
+                    <div><img src="image/company-logo/ru-service714.png" alt=""></div>
+                    <div><img src="image/company-logo/layer-532.png" alt=""></div>
+                </div>
+                <div class="container-form-service">
+                    <form>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input class="phone-number" type="tel" name="phone_number" placeholder="+38(___) ___-__-__">
+                        <input class="text-service" type="tel" name="service-text" placeholder="Сумма, грн">
+                        <input type="submit" class="btn-service-block" value="Пополнить">
+                    </form>
+                </div>
+            </div>
+
+        </div><!-- /block replenish mobile-->
+<!--block transfer money-->
+        <div class="service-small-block">
+            <div class="title-small-block">
+                <img class="layer-1" src="image/icons/ellipse-2.png" alt="ellipse">
+                <img class="layer-2" src="image/icons/shape-532.png" alt="shape">
+                <p>Перевести на счет</p>
+            </div>
+            <div class="container-block-service">
+                <div class="companies-logo">
+                    <div><img src="image/company-logo/layer-1.png" alt=""></div>
+                    <div><img src="image/company-logo/lifecell.png" alt=""></div>
+                    <div><img src="image/company-logo/vodafone.png" alt=""></div>
+                    <div><img src="image/company-logo/ru-service714.png" alt=""></div>
+                    <div><img src="image/company-logo/layer-532.png" alt=""></div>
+                </div>
+                <div class="container-form-service">
+                    <form>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input class="phone-number" type="tel" name="phone_number" placeholder="+38(___) ___-__-__">
+                        <input class="text-service" type="tel" name="service-text" placeholder="Сумма, грн">
+                        <input type="submit" class="btn-service-block" value="Перевести">
+                    </form>
+                </div>
+            </div>
+
+        </div><!-- /block transfer money-->
+<!--block popular services-->
+        <div class="service-small-block">
+            <div class="title-small-block">
+                <img class="layer-1" src="image/icons/ellipse-2.png" alt="ellipse">
+                <img class="layer-2" src="image/icons/shape-532.png" alt="shape">
+                <p>Популярные услуги</p>
+            </div>
+            <div class="container-block-service">
+                <div class="container-form-service">
+                    <div class="popular-service">
+                        <div class="popular-service-top">
+                            <div><img class="brand-first-top" src="image/company-logo/wot.png" alt=""></div>
+                            <div><img class="brand-second-top" src="image/company-logo/layer-1.png" alt=""></div>
+                            <div><img class="brand-third-top" src="image/company-logo/fregatnewlogo.png" alt=""></div>
+                        </div>
+                        <div class="popular-service-bottom">
+                            <div><img class="brand-first-bottom" src="image/company-logo/layer-606.png" alt=""></div>
+                            <div><img class="brand-second-bottom" src="image/company-logo/steam-logo.png" alt=""></div>
+                            <div><img class="brand-third-bottom"
+                                      src="image/company-logo/league-of-legends-logo-png-file.png"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="more-service"><p><a href="#">Еще</a></p></div>
+            </div>
+
+        </div><!-- /block popular services-->
+    </div>
+    <div class="container-btn-all-service"><!-- /container for the block with services -->
+        <button class="btn-all-service">Все услуги</button>
+    </div>
+</section><!-- /top container -->
+<script src="skin/js/custom.js"></script>
+</body>
+</html>
